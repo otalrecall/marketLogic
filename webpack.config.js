@@ -4,12 +4,11 @@ var path = require('path');
 module.exports = {
     devtool: 'inline-source-map',
     entry: [
-        'webpack-dev-server/client?http://127.0.0.1:8080/',
-        'webpack/hot/only-dev-server',
-        './src'
+        './src/index.js'
     ],
     output: {
         path: path.join(__dirname, 'public'),
+        publicPath: '/public/',
         filename: 'bundle.js'
     },
     resolve: {
@@ -66,6 +65,9 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+        })
     ]
 };
