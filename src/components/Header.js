@@ -13,7 +13,7 @@ const Header = ({ text }) => (
 )
 
 Header.propTypes = {
-  text: PropTypes.string.isRequired
+  	text: PropTypes.string.isRequired
 }
 
 export default Header

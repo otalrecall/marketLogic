@@ -3,14 +3,13 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from "react-redux"
-import Main from './containers/Main'
+import App from './components/App'
 import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
 import store from "./store"
-import Styles from './static/styles.css';
 
 render (
 	<Provider store={store}>
-		<Main/>
+		<App/>
 	</Provider>, 
 	document.getElementById('app')
 )
