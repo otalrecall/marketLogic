@@ -9,7 +9,7 @@ const Button = ({ onClick, text }) => (
 	        marginLeft: "10px"
 		}}
 		onClick={ onClick }
-	> {text} </button>
+	>{text}</button>
 )
 
 Button.propTypes = {

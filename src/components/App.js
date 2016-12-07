@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from "../components/Header"
-import ControlPanelContainer from "../containers/ControlPanelContainer"
-import ListContainer from "../containers/ListContainer"
+import Header from "./Header"
+import ControlPanel from "../containers/ControlPanel"
+import List from "../containers/List"
 
 
 const App = () => (
@@ -13,13 +13,13 @@ const App = () => (
         <div style={{ backgroundColor:"#ffccff" }}>
             <div className="container">
                 <div className="col-md-offset-3 col-md-6 col-xs-12">
-                    <ControlPanelContainer />
+                    <ControlPanel />
                 </div>
             </div>
         </div>
         <div className="container">
             <div className="col-md-offset-3 col-md-6 col-xs-12">
-                <ListContainer />
+                <List />
             </div>
         </div>
     </div>

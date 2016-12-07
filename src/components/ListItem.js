@@ -3,7 +3,7 @@ import { setCheck } from '../actions/itemsActions'
 
 let input = false
 
-const ListItem = ({ key, onClick, name, amount, checked }) => (
+const ListItem = ({ onClick, name, amount, checked }) => (
 	<li 
 		className="list-group-item"
 		onClick={onClick}

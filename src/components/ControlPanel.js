@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { addItem } from '../actions/itemsActions'
-import Button from '../components/Button'
+import Button from './Button'
 
 const ControlPanel = ({ 
     onIncreaseButtonClick, 
