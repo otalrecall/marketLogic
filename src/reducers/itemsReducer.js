@@ -1,14 +1,16 @@
+import data from "../data"
+
 const item = (state = {}, action) => {
 	switch(action.type) {
 		case "INCREASE_ITEMS":
-			if (state.checked || state.name == action.name) {
+			if (state.checked || state.name === action.name) {
 				return Object.assign({}, state, {
 					amount: state.amount + 1
 				})
 			}
 			return state
 		case "DECREASE_ITEMS":
-			if (state.checked || state.name == action.name) {
+			if (state.checked || state.name === action.name) {
 				const decreasedItem = Object.assign({}, state, {
 					amount: state.amount -1
 				})
@@ -32,10 +34,7 @@ const item = (state = {}, action) => {
 	}
 }
 
-const items = (state = [ 
-	{id: Date.now(), name: "Tables", amount: 3, checked: false}, 
-	{id: Date.now()+1, name: "Chairs", amount: 5, checked: false}]
-	, action) => {
+const items = (state = data, action) => {
 	switch(action.type) {
 		case "INCREASE_ITEMS":
 		    let increasedItems = state.map(i => 
@@ -44,7 +43,7 @@ const items = (state = [
 		    // If there is item in the control panel and it's not already in the list, add it
 		    if (action.name && !increasedItems.find(i => i.name === action.name)) {
 		    	const newItem = {
-		    		id: Date.now(),
+		    		id: Date.now()%100,
 		    		name: action.name,
 		    		amount: 1,
 		    		checked: false

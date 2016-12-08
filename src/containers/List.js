@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import List from '../components/List'
-import { toggleChecked } from '../actions/itemsActions'
+import { toggleChecked } from '../actions/ItemsActions'
 
 const mapStateToProps = (state) => {
 	return {

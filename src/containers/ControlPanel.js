@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { addItem } from '../actions/itemsActions'
+import { addItem } from '../actions/ItemsActions'
 import { increaseItems, decreaseItems} from '../actions/itemsActions'
 import ControlPanel from "../components/ControlPanel"
 

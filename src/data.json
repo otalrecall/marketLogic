@@ -1,0 +1,14 @@
+[
+	{
+		"id": 1480187767356,
+		"name": "Chairs",
+		"amount": 3,
+		"checked": false
+	},
+	{
+		"id": 1480187767357,
+		"name": "Tables",
+		"amount": 5,
+		"checked": false
+	}
+]
