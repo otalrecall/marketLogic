@@ -18,7 +18,7 @@ describe('actions', () => {
 	    expect(actions.decreaseItems(name)).toEqual(expectedAction)
   	})
  	it('should create an action to toggle an item', () => {
-	    const itemId = 1
+	    const itemId = 1480187767356
 	    const expectedAction = {
 	      type: 'TOGGLE_CHECKED',
 	      itemId

@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react'
-import { setCheck } from '../actions/itemsActions'
 
 let input = false
 

@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
-import { addItem } from '../actions/ItemsActions'
-import { increaseItems, decreaseItems} from '../actions/itemsActions'
+import { increaseItems, decreaseItems} from '../actions/ItemsActions'
 import ControlPanel from "../components/ControlPanel"
 
 const mapStateToProps = (state) => {
