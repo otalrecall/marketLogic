@@ -43,11 +43,12 @@ const items = (state = data, action) => {
 		    // If there is item in the control panel and it's not already in the list, add it
 		    if (action.name && !increasedItems.find(i => i.name === action.name)) {
 		    	const newItem = {
-		    		id: Math.floor(Date.now()/1e11),
+		    		id: parseInt(Date.now().toString().slice(0, -2)),
 		    		name: action.name,
 		    		amount: 1,
 		    		checked: false
 		    	}
+		    	console.log(newItem.id)
 		    	increasedItems.push(newItem)
 		    }
 		    return increasedItems

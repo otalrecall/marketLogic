@@ -15,17 +15,23 @@ const ControlPanel = ({
             paddingTop: "10px",
             paddingBottom: "10px"
         }} 
-        className="input-group" >
+        className="input-group"
+        onKeyPress={ e => {
+            if (e.which === 13) {
+                e.preventDefault()
+                onIncreaseButtonClick(input.value)
+            }
+        }} >
             <span className="input-group-btn">
-                <Button 
+                <Button
                     text={textDecreaseButton}
-                      onClick={ e => {
+                    onClick={ e => {
                           e.preventDefault()
                           onDecreaseButtonClick(input.value)
-                      }}/>
+                    }} />
             </span>
             <input 
-                type="text" 
+                type="text"
                 ref={ node => { input = node }}
                 className="form-control" />
             <span className="input-group-btn">

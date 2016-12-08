@@ -42,7 +42,7 @@ describe('items reducer', () => {
         ).toEqual([ 
             {id: 1480187767356, name: "Chairs", amount: 3, checked: false}, 
             {id: 1480187767357, name: "Tables", amount: 6, checked: true},
-            {id: Math.floor(Date.now()/1e11), name: "Trucks", amount: 1, checked: false}
+            {id: parseInt(Date.now().toString().slice(0, -2)), name: "Trucks", amount: 1, checked: false}
         ])
     })
 
