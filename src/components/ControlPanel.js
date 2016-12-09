@@ -36,11 +36,11 @@ const ControlPanel = ({
                 className="form-control" />
             <span className="input-group-btn">
                   <Button 
-                      text={textIncreaseButton}
-                      onClick={ e => {
-                          e.preventDefault()
-                          onIncreaseButtonClick(input.value)
-                      }}/>
+                        text={textIncreaseButton}
+                        onClick={ e => {
+                            e.preventDefault()
+                            onIncreaseButtonClick(input.value)
+                        }}/>
             </span>
         </form>
     )

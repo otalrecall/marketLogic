@@ -48,7 +48,6 @@ const items = (state = data, action) => {
 		    		amount: 1,
 		    		checked: false
 		    	}
-		    	console.log(newItem.id)
 		    	increasedItems.push(newItem)
 		    }
 		    return increasedItems
